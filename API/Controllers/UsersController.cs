@@ -17,7 +17,7 @@ public class UsersController(DataContext context) : BaseApiController
         return users;
     }
 
-    [Authorize]
+    //[Authorize]
     [HttpGet]
     [Route("{id}")] //api/Users/3
     public async Task<ActionResult<AppUser>> GetUser(int id)
